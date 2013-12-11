@@ -92,7 +92,10 @@
 	emitterCell.birthRate = 45.0f;
     
     
-    // and some ambiance
+    emitterLayer.emitterCells = @[emitterCell];
+    
+    /*
+    // and some ambiance?
     CAEmitterCell *emitterCell2 = [CAEmitterCell emitterCell];
 	
 	emitterCell2.name = @"Glow";
@@ -119,6 +122,7 @@
 
     
 	emitterLayer.emitterCells = @[emitterCell, emitterCell2];
+     */
 }
 
 - (void)setFrame:(CGRect)frame
