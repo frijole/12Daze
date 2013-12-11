@@ -7,47 +7,44 @@
 
 @implementation DazeEmitterView
 
--(id)initWithFrame:(CGRect)frame {
+-(id)initWithFrame:(CGRect)frame
+{
     
 	self = [super initWithFrame:frame];
 	if (self) {
-		self.backgroundColor = [UIColor blackColor];
-        
+        self.backgroundColor = [UIColor blackColor];
+
         [self setupEmitters];
 	}
 	
 	return self;
 }
 
--(id)initWithCoder:(NSCoder *)aDecoder {
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
     
 	self = [super initWithCoder:aDecoder];
 	if (self) {
-		self.backgroundColor = [UIColor blackColor];
-        
+        self.backgroundColor = [UIColor blackColor];
+
         [self setupEmitters];
 	}
 	
 	return self;
 }
 
-+ (Class) layerClass {
++ (Class)layerClass
+{
     return [CAEmitterLayer class];
 }
 
--(void)awakeFromNib {
+-(void)awakeFromNib
+{
     [self setupEmitters];
 }
 
-- (void)setFrame:(CGRect)frame
+- (void)setupEmitters
 {
-    [super setFrame:frame];
-    CAEmitterLayer *emitterLayer = (CAEmitterLayer*)self.layer;
-    CGFloat scale = [[UIScreen mainScreen] scale];
-    emitterLayer.emitterSize = CGSizeApplyAffineTransform(frame.size, CGAffineTransformMakeScale(scale, scale));
-}
-
-- (void)setupEmitters {
     CAEmitterLayer *emitterLayer = (CAEmitterLayer*)self.layer;
     
 	emitterLayer.name = @"GlowLayer";
@@ -82,6 +79,14 @@
 	emitterCell.velocity = 0.00;
     
 	emitterLayer.emitterCells = @[emitterCell];
+}
+
+- (void)setFrame:(CGRect)frame
+{
+    [super setFrame:frame];
+    CAEmitterLayer *emitterLayer = (CAEmitterLayer*)self.layer;
+    CGFloat scale = [[UIScreen mainScreen] scale];
+    emitterLayer.emitterSize = CGSizeApplyAffineTransform(frame.size, CGAffineTransformMakeScale(scale, scale));
 }
 
 @end
