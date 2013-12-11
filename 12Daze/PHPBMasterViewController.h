@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "DazeEmitterView.h"
+
 @interface PHPBMasterViewController : UIViewController
+
+@property (nonatomic, weak) IBOutlet DazeEmitterView *dazeView;
 
 @end
