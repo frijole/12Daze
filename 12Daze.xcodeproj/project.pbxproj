@@ -123,7 +123,6 @@
 				CD1CCF351857C3E500CBC94A /* Main.storyboard */,
 				CD1CCF381857C3E500CBC94A /* PHPBMasterViewController.h */,
 				CD1CCF391857C3E500CBC94A /* PHPBMasterViewController.m */,
-				CD1CCF3E1857C3E500CBC94A /* Images.xcassets */,
 				CD1CCF2A1857C3E500CBC94A /* Supporting Files */,
 			);
 			path = 12Daze;
@@ -132,6 +131,7 @@
 		CD1CCF2A1857C3E500CBC94A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CD1CCF3E1857C3E500CBC94A /* Images.xcassets */,
 				CD1CCF2B1857C3E500CBC94A /* 12Daze-Info.plist */,
 				CD1CCF2C1857C3E500CBC94A /* InfoPlist.strings */,
 				CD1CCF2F1857C3E500CBC94A /* main.m */,
