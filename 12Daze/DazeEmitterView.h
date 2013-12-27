@@ -12,9 +12,11 @@
 // water
 // #define kDazeEmitterViewDefaultBackgroundColor [UIColor colorWithRed:77/255.0f green:170/255.0f blue:213/255.0f alpha:1.0f];
 
-#define kDazeEmitterViewDefaultParticleColor [UIColor colorWithWhite:1.0f alpha:0.9f]
+#define kDazeEmitterViewDefaultParticleColor [UIColor colorWithWhite:1.0f alpha:0.5f]
 #define kDazeEmitterViewDefaultParticleImage [UIImage imageNamed:@"dot.png"]
 
+// Intensity from 0-10
+// Use enums for preset levels.
 typedef NS_ENUM(NSInteger, DazeEmitterViewIntensity) {
     DazeEmitterViewIntensityDead = 0,
     DazeEmitterViewIntensityLow = 1,

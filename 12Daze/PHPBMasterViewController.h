@@ -14,4 +14,16 @@
 
 @property (nonatomic, weak) IBOutlet DazeEmitterView *dazeView;
 
+@property (nonatomic, weak) IBOutlet UISlider *intensitySlider;
+@property (nonatomic, weak) IBOutlet UILabel  *intensityLabel;
+
+@property (nonatomic, weak) IBOutlet UILabel  *spinLabel;
+@property (nonatomic, weak) IBOutlet UILabel  *speedLabel;
+@property (nonatomic, weak) IBOutlet UILabel  *birthrateLabel;
+@property (nonatomic, weak) IBOutlet UILabel  *scaleLabel;
+@property (nonatomic, weak) IBOutlet UILabel  *opacityLabel;
+
+- (IBAction)sliderChanged:(id)sender;
+- (IBAction)sliderDone:(id)sender;
+
 @end
